@@ -50,7 +50,7 @@ function calculateTotal(cards) {
   };
   
   const handleSave = () => {
-    const total = calculateTotal();
+    const total = calculateTotal(cards);
     
     if (currentRound === 1) {
       setSavedRounds(prev => ({

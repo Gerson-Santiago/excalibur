@@ -26,11 +26,11 @@ export default function CardCalculator() {
     carta5: 'Cartinha 5',
     carta6: 'Cartinha 6'
   };
-  
+  // O ideal é fazer a multiplicação dos valores das cartas aqui.
   const calculateTotal = () => {
     return Object.values(cards).reduce((sum, value) => {
       const num = parseInt(value) || 0;
-      return sum + num;
+      return sum * num;
     }, 0);
   };
   

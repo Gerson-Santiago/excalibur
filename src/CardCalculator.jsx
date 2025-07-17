@@ -27,17 +27,13 @@ export default function CardCalculator() {
     carta6: 'Cartinha 6'
   };
   // O ideal é fazer a multiplicação dos valores das cartas aqui.
-function calculateTotal(cards) {
-  const values = Object.values(cards);
+  const calculateTotal = (cards) => {
+    return Object.entries(cards).reduce((sum, [_, value], index) => {
+      const num = parseInt(value, 10);
+      return !isNaN(num) ? sum + num * (index + 1) : sum;
+    }, 0);
+  };
 
-  return values.reduce((sum, value, index) => {
-    const num = parseInt(value);
-    if (!isNaN(num)) {
-      sum += num * (index + 1); // index + 1 é o multiplicador (posição)
-    }
-    return sum;
-  }, 0);
-}
   
   const handleInputChange = (cardKey, value) => {
     // Apenas números

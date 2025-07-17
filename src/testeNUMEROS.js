@@ -11,7 +11,7 @@ function calculateTotal(cards) {
 }
 
 // Teste
-const cards = {
+let cards = {
   carta1: '',
   carta2: '2',
   carta3: '2',
@@ -20,4 +20,32 @@ const cards = {
   carta6: '1'
 };
 
-console.log(calculateTotal(cards)); // Saída: 10
+console.log(`Saída esperada => ${calculateTotal(cards)}`); // Saída: 20
+
+console.log(`Saída esperada => ${ calculateTotal({
+  carta1: '',
+  carta2: '2',
+  carta3: '2',
+  carta4: '',
+  carta5: '',
+  carta6: ''
+})}`); // Saída: 10
+
+
+console.log(`Saída esperada => ${ calculateTotal({
+  carta1: '',
+  carta2: '2',
+  carta3: '2',
+  carta4: '',
+  carta5: '',
+  carta6: '1'
+})}`); // Saída: 16
+
+console.log(`Saída esperada => ${ calculateTotal({
+  carta1: '',
+  carta2: '',
+  carta3: '',
+  carta4: '',
+  carta5: '2',
+  carta6: '1'
+})}`); // Saída: 16

@@ -88,7 +88,7 @@ export default function CardCalculator() {
     setCurrentRound(1);
   };
   
-  const total = calculateTotal();
+  const total = calculateTotal(cards);
   const canSave = total > 0;
   
   return (

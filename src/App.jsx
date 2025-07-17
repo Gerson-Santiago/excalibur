@@ -1,7 +1,8 @@
+// src/App.jsx
+
+import React from 'react'
 import CardCalculator from './CardCalculator'
 
-function App() {
+export default function App() {
   return <CardCalculator />
 }
-
-export default App

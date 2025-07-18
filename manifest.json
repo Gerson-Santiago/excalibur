@@ -1,13 +1,14 @@
 {
   "name": "Calculadora de Cartas",
-  "short_name": "Cartas",
-  "start_url": "/",
+  "short_name": "Cartas Excalibur",
+  "start_url": "/excalibur/",
+  "scope": "/excalibur/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#6b21a8",
   "icons": [
     {
-      "src": "/android-chrome-192.png",
+      "src": "android-chrome-192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
